@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #7777ec;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Javascript!</h1>
+    <p id="text1">Lorem ipsum dolor sit <strong>amet</strong> consectetur adipisicing elit. Pariatur, consequatur asperiores. Quia eveniet culpa voluptatem! Beatae deleniti voluptate, sed explicabo maiores neque debitis perferendis consequatur, quibusdam, aspernatur laborum numquam illo.</p>
+    <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam alias officia, praesentium debitis enim inventore labore, optio velit quam nisi ea ut provident iste sit consectetur sequi aspernatur deleniti tenetur?</p>
+
+    <script>
+        /* var p1 = document.getElementsByTagName('p')[0]
+        p1.innerHTML = 'Mudei o texto!' */
+
+        /* var p1 = document.getElementsByTagName('p')[1]
+        p1.innerHTML = 'Mudei o texto do segundo parágrafo usando o getElementsByTagName buscando pela sua posição [1]' */
+
+        /* var p1 = document.getElementById('text1')
+        p1.innerHTML = 'Mudei o texto do primeiro parágrafo usando o getElementById' */
+
+        /* var p1 = document.getElementsByClassName('text2')
+        p1.innerHTML = 'Mudei o texto do segundo parágrafo usando getElementsByClassName' */
+
+        /* var p1 = document.querySelector('#text1')
+        p1.innerHTML = 'Mudei o texto usando o ID com querySelector' */
+
+        /* var p2 = document.querySelector('.text2')
+        p2.innerHTML = 'Mudei o texto do segundo parágrafo usando a class com querySelector' */
+    </script>
+</body>
+</html>
