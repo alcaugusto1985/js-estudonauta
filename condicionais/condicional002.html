@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 02</title>
+</head>
+<body>
+    <h1>Pesquisa de nacionalidade</h1>
+
+    <input type="text" name="pais" id="pais" placeholder="Digite seu pais">
+    <button id="btn">Enviar</button>
+    <p id="msg"></p>
+
+    <script>
+        let btn = document.querySelector('#btn').addEventListener('click', () => {
+            let pais = document.querySelector('#pais').value
+            let msg = document.querySelector('#msg')
+            if (pais == 'Brasil' || pais == 'brasil') {
+                msg.innerHTML = 'Você é Brasileiro(a)!'
+            } else {
+                msg.innerHTML = 'Você é estrangeiro(a)!'
+            }
+        })
+    </script>
+</body>
+</html>
