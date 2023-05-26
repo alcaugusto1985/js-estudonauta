@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 03</title>
+</head>
+<body>
+    <h1>Posso votar nas Eleições?</h1>
+    <h2>Consulte abaixo</h2>
+
+    <input type="number" name="idade" id="idade">
+    <button id="btn">Consultar</button>
+    <p id="msg">Resultado:</p>
+
+    <script>
+        let btn = document.querySelector('#btn').addEventListener('click', () => {
+            let idade = Number(document.querySelector('#idade').value)
+            let msg = document.querySelector('#msg')
+
+            if (idade < 16) {
+                msg.innerHTML = `Resultado: Você tem ${idade} anos. <br>`
+                msg.innerHTML += 'Não pode votar.'
+            } else if (idade < 18 || idade >= 60) {
+                msg.innerHTML = `Resultado: Você tem ${idade} anos. <br>`
+                msg.innerHTML += 'Voto opcional.'
+            } else {
+                msg.innerHTML = `Resultado: Você tem ${idade} anos. <br>`
+                msg.innerHTML += 'Voto obrigatório.' 
+            }
+        })
+    </script>
+</body>
+</html>
