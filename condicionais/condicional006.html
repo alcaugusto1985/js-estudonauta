@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 06</title>
+</head>
+<body>
+    <h1>Dias da semana</h1>
+    <p id="msg"></p>
+
+    <script>
+        let day = new Date()
+        let newDay = day.getDay()
+        let msg = document.querySelector('#msg')
+
+        switch(newDay) {
+            case 0:
+                msg.innerHTML = 'Hoje é Domingo'
+                break
+
+            case 1:
+                msg.innerHTML = 'Hoje é Segunda-feira'
+                break
+
+            case 2: 
+                msg.innerHTML = 'Hoje é Terça-feira'
+                break
+
+            case 3: 
+                msg.innerHTML = 'Hoje é Quarta-feira'
+                break
+
+            case 4:
+                msg.innerHTML = 'Hoje é Quinta-feira'
+                break
+
+            case 5:
+                msg.innerHTML = 'Hoje é Sexta-feira'
+                break
+
+            case 6: 
+                msg.innerHTML = 'Hoje é Sábado'
+                break
+
+            default:
+                msg.innerHTML = 'Dia inválido!'
+        }
+    </script>
+</body>
+</html>
