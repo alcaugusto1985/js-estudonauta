@@ -13,18 +13,19 @@
     <div id="msg"></div>
 
     <script>
-        let btn = document.querySelector('#btn')
-        btn.addEventListener('click', () => {
-            let vel = document.querySelector('#vel')
-            let newVel = Number(vel.value)
+        let btn = document.querySelector('#btn').addEventListener('click', () => {
+            var vel = Number(document.querySelector('#vel').value)
             let msg = document.querySelector('#msg')
-            msg.innerHTML += `Sua velocidade é ${newVel} Km/h.`
 
-            if (newVel > 60) {
-                newVel.innerHTML += `Sua velocidade é de ${newVel} Km/h! Você foi multado.`
+            if (vel > 60) {
+                msg.innerHTML = `Você foi <strong>multado</strong> por excesso de velocidade! <br>`
+                msg.innerHTML += `Sua velocidade foi de <strong>${vel} KM/h</strong>. <br>`
+                msg.innerHTML += `Dirija com atenção!`
+            } else {
+                msg.innerHTML = `Sua velocidade é de <strong>${vel} KM/h</strong>.`
             }
-        })
-        
+            
+        })   
     </script>
 </body>
 </html>
