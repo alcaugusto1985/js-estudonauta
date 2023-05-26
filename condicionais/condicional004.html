@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional 04</title>
+</head>
+<body>
+    <h1>Que horas são?</h1>
+
+    <input type="number" name="hora" id="hora" placeholder="Digite um horário">
+    <button id="btn">Hora</button>
+    <p id="msg"></p>
+
+    <script>
+        let btn = document.querySelector('#btn').addEventListener('click', () => {
+            let hora = Number(document.querySelector('#hora').value)
+            let msg = document.querySelector('#msg')
+
+            if (hora < 12) {
+                msg.innerHTML = 'Bom dia! <br>'
+                msg.innerHTML += `São exatamente ${hora} hora(s) da manhã.`
+            } else if (hora < 18) {
+                msg.innerHTML = 'Boa tarde! <br>'
+                msg.innerHTML += `São exatamente ${hora} horas.`
+            } else {
+                msg.innerHTML = 'Boa noite! <br>'
+                msg.innerHTML += `São exatamente ${hora} horas.`
+            }
+        })
+    </script>
+</body>
+</html>
