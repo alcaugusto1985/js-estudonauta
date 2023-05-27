@@ -10,10 +10,10 @@ let getHours = () => {
     let cima = document.querySelector('#cima')
     let img = document.querySelector('#img')
 
-    if (hours == 0 && hours < 12) {
+    if (hours > 0 && hours < 12) {
         cima.innerHTML = 'Bom dia! <br>'
         cima.innerHTML += `Agora são ${hour}:${minute}:${second}`
-        corpo.style.backgroundColor = '#E0B511'
+        corpo.style.backgroundColor = '#F7BB3B'
         img.src = 'imagens/manha-novo.png'
     } else if (hours >= 12 && hours < 18) {
         cima.innerHTML = 'Boa tarde! <br>'
