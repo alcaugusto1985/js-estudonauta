@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: #6666ca;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    background-color: #fff;
+    width: 500px;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #00000093;
+}
+
+section > h1 {
+    text-align: center;
+    text-shadow: 2px 2px 2px #0000004f;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+}
+
+input#ano, input#sexoM, input#sexoF {
+    margin-bottom: 20px;
+    padding: 2px;
+    border: 1.5px solid #000;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.1em;
+    background-color: #ffffff00;
+}
+
+input#ano {
+    width: 100px;
+}
+
+input#sexoF {
+    margin-left: 5px;
+}
+
+button#btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button#btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #000;
+}
+
+p#msg {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+div#img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+div#img > img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 30px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer > p {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
