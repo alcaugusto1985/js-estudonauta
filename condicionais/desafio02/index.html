@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Verificador de idade</h1> 
+    </header>
+
     <section>
-        <h1>Verificador de idade</h1>
 
-            <div>
-                <label for="ano">Ano de Nascimento: </label>
-                <input type="number" name="ano" id="ano" autocomplete="bday-year">
-            </div>
+        <div>
+            <p>Digite o ano:
+                <input type="number" name="txtano" id="txtano">
+            </p> 
+            <p>sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
 
-            <div>
-                <label for="sexo">Sexo: </label>
-                <input type="radio" name="sexo" id="sexoM" autocomplete="sex"> Masculino
-                <input type="radio" name="sexo" id="sexoF" autocomplete="sex"> Feminino
-            </div>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p> 
 
-            <button id="btn">Verificar</button>
+            <input type="button" value="Verificar" id="btn" onclick="verificar()">
 
-            <p id="msg"></p>
+        </div> <br>
 
-            <div id="img">
-                <img src="imagens/menina-bebe_.png" alt="foto de bebê" id="foto">
-            </div>
-        
+        <div id="res">
+            Preencha as informações para ver o resultado
+        </div>
+
     </section>
 
     <footer>
