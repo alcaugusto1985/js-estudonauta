@@ -7,7 +7,7 @@ function verificar() {
     img.setAttribute('id', 'foto')
 
     if (fano.value.langth == 0 || Number(fano.value) > ano) {
-        alert('[ERRO] - Digite um ano válido!')
+        alert('[ERRO]: Digite um dado válido!')
     } else {
         var fsex = document.getElementsByName('radsex')
         var idade = ano - Number(fano.value)
