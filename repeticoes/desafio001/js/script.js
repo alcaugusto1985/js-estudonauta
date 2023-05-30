@@ -8,8 +8,9 @@ btn.addEventListener('click', () => {
     if (inicio == '' || fim == '' || passo == '') {
         alert('Por favor, preencha todos os campos!')
     } else {
-        for(let i = inicio; i <= fim; i+=passo) {
-            res.innerHTML = `Passo ${i}`
+        for (let i = inicio; i <= fim; i += passo) {
+            res.innerHTML = `${i}`
+            console.log(res)
         }
     }
 })
