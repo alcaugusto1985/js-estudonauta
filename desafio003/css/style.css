@@ -1,0 +1,84 @@
+@charset "UTF-8";   
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    background-color: #6d6ddf;
+    width: 100vw;
+    height: 100vh;
+}
+
+header > h1{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 5px #00000083;
+}
+
+section{
+    background-color: #fff;
+    width: 375px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #00000083;
+}
+
+input#num{
+    font-size: 1em;
+    width: 100px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    padding: 3px;
+}
+
+input#btn{
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+input#btn:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+select{
+    font-size: 1em;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+input#btn2{
+    background-color: #000;
+    color: #fff;
+    border: 3px solid #000;
+    border-radius: 5px;
+    padding: 3px;
+    font-weight: bold;
+}
+
+input#btn2:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
+div#res{
+    font-weight: bold;
+}
+
+footer > p{
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    padding: 10px;
+}
