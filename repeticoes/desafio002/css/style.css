@@ -16,7 +16,7 @@ header{
 
 section{
     background-color: #fff;
-    width: 450px;
+    width: 350px;
     margin: auto;
     padding: 10px;
     border-radius: 15px;
@@ -24,6 +24,7 @@ section{
 
 input#tab{
     padding: 3px;
+    width: 100px;
     border: 1px solid #000;
     border-radius: 5px;
     outline: none;
@@ -41,6 +42,15 @@ input#btn:hover{
     color: #fff;
     cursor: pointer;
     transition: .3s;
+}
+
+select#res{
+    background-color: #fff;
+    outline: none;
+    width: 175px;
+    height: 170px;
+    border: 1px solid #000;
+    border-radius: 5px;
 }
 
 footer{
